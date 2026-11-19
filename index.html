@@ -1,39 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>لوحة تحكم ديسكورد</title>
-  <style>
-    body {
-      background: #171923;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding: 40px;
-    }
-    .box {
-      background: #252a3a;
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 500px;
-      margin: auto;
-    }
-    button {
-      background: #5865F2;
-      color: white;
-      border: 0;
-      padding: 14px 25px;
-      border-radius: 8px;
-      font-size: 18px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BICKS Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#171923;color:white;font-family:Arial,sans-serif}
+header{background:#222638;padding:22px;text-align:center}
+header h1{margin:0;color:#8b9cff}
+header p{color:#c3c8d8}
+.container{max-width:850px;margin:25px auto;padding:15px}
+.card{background:#242a3d;padding:20px;margin:14px 0;border-radius:13px}
+h2{color:#a6b3ff}
+button{background:#6578e8;color:white;border:0;padding:12px 20px;border-radius:8px;cursor:pointer;font-size:15px}
+button:hover{background:#8291ff}
+.status{color:#75e6a1}
+footer{text-align:center;color:#9298aa;padding:25px}
+</style>
 </head>
 <body>
-  <div class="box">
-    <h1>لوحة تحكم ديسكورد</h1>
-    <p>أهلاً بك في لوحة التحكم الخاصة بسيرفرك!</p>
-    <button>ابدأ الآن</button>
-  </div>
+<header>
+<h1> BICKS </h1>
+<p>لوحة التحكم ببوت ديسكورد</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>حالة البوت</h2>
+<p class="status">لوحة التحكم جاهزة</p>
+</div>
+
+<div class="card">
+<h2>إدارة الرتب</h2>
+<button onclick="alert('سيتم ربط إدارة الرتب بالبوت لاحقاً')">إدارة الرتب</button>
+</div>
+
+<div class="card">
+<h2>إدارة الأعضاء</h2>
+<button onclick="alert('سيتم ربط إدارة الأعضاء بالبوت لاحقاً')">إدارة الأعضاء</button>
+</div>
+
+<div class="card">
+<h2>إدارة القنوات</h2>
+<button onclick="alert('سيتم ربط إدارة القنوات بالبوت لاحقاً')">إدارة القنوات</button>
+</div>
+
+<div class="card">
+<h2>أوامر البوت</h2>
+<button onclick="alert('سيتم ربط الأوامر بالبوت لاحقاً')">عرض الأوامر</button>
+</div>
+
+</div>
+
+<footer>
+BICKS Dashboard © 2026
+</footer>
 </body>
 </html>
